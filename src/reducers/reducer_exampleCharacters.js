@@ -4,7 +4,7 @@ export default function() {
     {title: "Jim Halpert"},
     {title: "Pam Halpert"},
     {title: "Michael Scott"}
-  ]
+  ];
 }
 // reducer is a function that returns a piece of application state
 // note that the application can have many pieces of states. => many different reducers

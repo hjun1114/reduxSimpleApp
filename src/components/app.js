@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import CharacterList from '../containers/character-list'
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <CharacterList/>
+      </div>
     );
   }
 }
+
+export default App;
