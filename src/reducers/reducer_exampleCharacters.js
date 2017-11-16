@@ -8,3 +8,4 @@ export default function() {
 }
 // reducer is a function that returns a piece of application state
 // note that the application can have many pieces of states. => many different reducers
+// this reducer spits out an array.
