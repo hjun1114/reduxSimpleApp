@@ -3,7 +3,7 @@ import CharactersReducer from './reducer_exampleCharacters';
 import ActiveCharacterReducer from './reducer_active_character';
 
 const rootReducer = combineReducers({
-  characters : CharactersReducer
+  characters : CharactersReducer,
   activeCharacter : ActiveCharacterReducer
 });
 // you can access this as a state from a callback.
