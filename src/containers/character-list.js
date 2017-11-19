@@ -7,6 +7,7 @@ class CharacterList extends React.Component {
 
   renderList(){
     const mappedList = this.props.characters.map((character)=> {
+      // this.props.characters is from mapStateToProps characters which is from state.characters comming from combineReducers
       return(
         <li
           key={character.title}
@@ -41,7 +42,7 @@ function mapDispatchToProps (dispatch) {
   // similarly in mapStateToProps to function, mapDispatchToProps will also
   // return something and can be used as props inside of the container.
   return bindActionCreators ({selectCharacter: selectCharacter}, dispatch);
-  // bindActionCreator function gets the function from a action and store it in the key: selectCharacter
+  // bindActionCreator function gets the function from an action and store it in the key: selectCharacter
   // whenever selectCharacter is called, the result is passed to all of our reducers.
 }
 
